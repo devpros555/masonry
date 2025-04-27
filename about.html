@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Masonry.inc</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+<!-- Header Start -->
+<header class="header_section" style="background-color: black; padding: 15px 0; border-bottom: 2px solid #fc0606;">
+    <div class="container-fluid">
+  
+      <!-- Full Row (Logo + Links + Contact) -->
+      <div class="d-flex align-items-center justify-content-between flex-wrap">
+  
+        <!-- Business Name -->
+        <a class="navbar-brand" href="index.html" style="color: white; font-size: 28px; font-weight: bold; text-decoration: none;">
+          Masonry.inc
+        </a>
+  
+        <!-- Navbar Links (Desktop only) -->
+        <nav class="navbar navbar-expand-lg d-none d-lg-flex">
+          <ul class="navbar-nav mx-auto text-center">
+            <li class="nav-item"><a class="nav-link" href="index.html" style="color: white;">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html" style="color: white;">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html" style="color: white;">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html" style="color: white;">Contact</a></li>
+          </ul>
+        </nav>
+  
+        <!-- Contact Info (Desktop only) -->
+        <div class="d-none d-lg-flex flex-column text-end">
+          <a href="tel:1234567890" style="color: #fc0606; text-decoration: none; font-weight: bold; margin-bottom: 5px;">
+            <i class="fas fa-phone"></i> (123) 456-7890
+          </a>
+          <a href="mailto:info@masonryinc.com" style="color: #fc0606; text-decoration: none; font-weight: bold;">
+            <i class="fas fa-envelope"></i> info@masonryinc.com
+          </a>
+        </div>
+  
+        <!-- Toggle Button (only on Mobile) -->
+        <button class="navbar-toggler d-lg-none ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          style="border: 2px solid #fc0606;">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+      </div> <!-- End Row -->
+  
+      <!-- Mobile Nav Links (appear below row) -->
+      <div class="collapse navbar-collapse d-lg-none mt-3" id="navbarNav">
+        <ul class="navbar-nav text-center">
+          <li class="nav-item"><a class="nav-link" href="index.html" style="color: white;">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html" style="color: white;">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html" style="color: white;">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html" style="color: white;">Contact</a></li>
+        </ul>
+      </div>
+  
+    </div>
+  </header>
+  
+  
+<!-- Header End -->
+<!-- about us start -->
+<!-- Hero Section Start -->
+<section class="hero-slide" style="position: relative; background-image: url('images/stonework\ 3.jpeg'); background-size: cover; background-position: center; min-height: 90vh; display: flex; align-items: center; justify-content: center; text-align: center; color: white; padding: 60px 20px;">
+  
+    <!-- Dark Overlay -->
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.6); z-index: 1;"></div>
+    
+    <!-- Hero Content -->
+    <div class="container" style="position: relative; z-index: 2;">
+      <h1 style="font-size: clamp(2.5rem, 6vw, 4rem); font-weight: bold; margin-bottom: 20px; color: #fc0606;">
+        Building Strength & Beauty
+      </h1>
+      <p style="font-size: 1.2rem; max-width: 800px; margin: auto; margin-bottom: 30px;">
+        At Masonry.inc, we are passionate about creating strong, beautiful, and lasting structures. With years of experience in stonework, bricklaying, and concrete construction, our team is committed to craftsmanship, quality, and customer satisfaction. Whether it's a custom patio, a new fireplace, or restoring historic masonry, we bring precision and artistry to every project.
+      </p>
+      <a href="contact.html" class="btn" style="background-color: #fc0606; color: black; font-weight: bold; padding: 15px 30px; border-radius: 8px; text-decoration: none; font-size: 1.2rem;">
+        Get a Free Estimate
+      </a>
+    </div>
+  
+  </section>
+  <!-- Hero Section End -->
+  
+  
+ <!-- aboutus end -->
+
+ <hr/>
+ <!-- Footer Section -->
+<footer class="footer_section" style="background-color: red; padding: 30px 0; text-align: center;">
+    <div class="container">
+      <p style="color: black; font-weight: bold; margin: 0;">
+        &copy; <span id="currentYear"></span> Masonry.inc | All Rights Reserved Made with devpros555
+      </p>
+      <div style="margin-top: 10px;">
+        <a href="https://www.facebook.com" target="_blank" style="color: black; margin: 0 10px; text-decoration: none;">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com" target="_blank" style="color:black; margin: 0 10px; text-decoration: none;">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com" target="_blank" style="color: black; margin: 0 10px; text-decoration: none;">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- JavaScript to Auto Update the Year -->
+  <script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+  
+  <!-- end of footer -->
+
+<!-- JavaScript to Auto Update the Year -->
+<script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+  
+  <!-- Bootstrap Bundle JS (important for navbar toggler to work) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  </body>
+  </html>
+  
+
+</body>
+</html>
